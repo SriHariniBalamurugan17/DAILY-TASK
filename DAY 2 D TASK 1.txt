@@ -73,6 +73,3 @@ System.out.println("The number is :"+ number);
 Input:
 
 3.14
- 
-Output :
-The number is: 3.14
