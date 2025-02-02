@@ -1,0 +1,78 @@
+NextLine() , Next() , Nextfloat()
+
+
+1.NextLine() :
+
+* It reads the entire line of the input, including spaces.
+* Returns the input as a String.
+
+Example:
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner.scanner=new Scanner(System.in);
+System.out.println("Enter a sentence:");
+String sentence=scanner.nextLine();\\ reads the full line 
+System.out.println("you entered:"+sentence);
+}
+}
+
+Input :
+
+Hello World!
+
+Output :
+ 
+you entered:Hello World!
+
+
+2.Next()
+
+*Reads only the single word(until a space,tab,or newline is encountered).
+*Returns the input as a String.
+
+Example :
+
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter a sentence:");
+String word=scanner.next(); \\Reads only the first word
+System.out.println("The word is : "+ word);
+}
+}
+
+Input :
+
+Hello world!
+
+Output:
+
+The word is: Hello
+
+
+3.nextFloat():
+
+*It used read a floating-point number from user input.
+*It stops reading when it encounters a space, tab,or newline.
+*If the input is not valid float, it throws an inputMismatchException.
+
+Example :
+
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter a floating-point number:");
+float number=scanner.nextFloat(); 
+System.out.println("The number is :"+ number);
+}
+}
+
+Input:
+
+3.14
+ 
+Output :
+The number is: 3.14
