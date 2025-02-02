@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class VowelCaseChecker {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+// Taking input from the user
+System.out.print("Enter a character: ");
+char ch = scanner.next().charAt(0);
+// Using switch statement to check for vowels and their case
+switch (ch) {
+case 'A': case 'E': case 'I': case 'O': case 'U':
+System.out.println(ch + " is an uppercase vowel.");
+break;
+case 'a': case 'e': case 'i': case 'o': case 'u':
+System.out.println(ch + " is a lowercase vowel.");
+break;
+default:
+System.out.println(ch + " is not a vowel.");
+}
+scanner.close();
+}
+}
