@@ -1,0 +1,31 @@
+SOURCE CODE :
+
+import java.util.Scanner;
+
+public class SumOfEvenNumbers {
+    public static void main(String[] args) {
+        // Create Scanner object for input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user for a number N
+        System.out.print("Enter a number N: ");
+        int n = scanner.nextInt();
+        
+        // Close the scanner
+        scanner.close();
+        
+        // Calculate the sum of all even numbers up to N
+        int sum = 0;
+        for (int i = 2; i <= n; i += 2) {
+            sum += i;
+        }
+        
+        // Display the result
+        System.out.println("The sum of all even numbers up to " + n + " is: " + sum);
+    }
+}
+
+OUTPUT :
+
+Enter a number N : 10
+The sum  of all even numbers up to 10 is : 2+4+6+8+10 = 30
