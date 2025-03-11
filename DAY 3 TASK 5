@@ -1,0 +1,38 @@
+class Battery {
+    int capacity;
+
+   
+    public Battery(int capacity) {
+        this.capacity = capacity;
+    }
+
+   
+    public int getCapacity() {
+        return capacity;
+    }
+}
+
+class Mobile {
+    Battery battery;
+
+    
+    public Mobile(int batteryCapacity) {
+        battery = new Battery(batteryCapacity);
+    }
+
+    
+    public void showBatteryCapacity() {
+        System.out.println("Mobile battery capacity: " + battery.getCapacity() + "mAh");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Mobile mobile = new Mobile(5000);
+
+       
+        mobile.showBatteryCapacity();
+    }
+}
+
