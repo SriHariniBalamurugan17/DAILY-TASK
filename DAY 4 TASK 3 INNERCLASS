@@ -1,0 +1,23 @@
+public class Computer {
+class Processor {
+public void startProcessor() {
+class ProcessorRunnable implements Runnable {
+@Override
+public void run() {
+System.out.println("Processor is processing.");
+}
+}
+ProcessorRunnable processorRunnable = new ProcessorRunnable();
+Thread processorThread = new Thread(processorRunnable);
+processorThread.start();
+}
+}
+public static void main(String[] args) {
+Computer computer = new Computer();
+Computer.Processor processor = computer.new Processor();
+processor.startProcessor();
+}
+}
+
+output:
+process is processing
