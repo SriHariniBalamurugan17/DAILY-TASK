@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.List;
+class Employee {
+    String name;
+    int id;
+public Employee(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+public void displayEmployeeDetails() {
+        System.out.println("Employee ID: " + id + ", Name: " + name);
+    }
+}
+class Department {
+    String departmentName;
+    List<Employee> employees;
+public Department(String departmentName) {
+        this.departmentName = departmentName;
+        this.employees = new ArrayList<>();
+    }
+ public void addEmployee(Employee employee) {
+        employees.add(employee);
+    }
+ public void displayDepartmentEmployees() {
+        System.out.println("Department: " + departmentName);
+        for (Employee employee : employees) {
+            employee.displayEmployeeDetails();
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Employee emp1 = new Employee("John Doe", 101);
+        Employee emp2 = new Employee("Jane Smith", 102);
+        Employee emp3 = new Employee("Samuel Green", 103);
+Department department = new Department("IT Department");
+department.addEmployee(emp1);
+        department.addEmployee(emp2);
+        department.addEmployee(emp3);
+department.displayDepartmentEmployees();
+    }
+}
