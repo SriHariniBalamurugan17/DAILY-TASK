@@ -32,9 +32,9 @@ public Department(String departmentName) {
 public class Main {
     public static void main(String[] args) {
         
-        Employee emp1 = new Employee("John Doe", 101);
-        Employee emp2 = new Employee("Jane Smith", 102);
-        Employee emp3 = new Employee("Samuel Green", 103);
+        Employee emp1 = new Employee("Dev", 10);
+        Employee emp2 = new Employee("Arjun", 102);
+        Employee emp3 = new Employee("Parthipan", 103);
 Department department = new Department("IT Department");
 department.addEmployee(emp1);
         department.addEmployee(emp2);
