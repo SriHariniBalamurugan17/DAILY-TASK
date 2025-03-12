@@ -20,4 +20,4 @@ processor.startProcessor();
 }
 
 output:
-process is processing
+Processor is processing
